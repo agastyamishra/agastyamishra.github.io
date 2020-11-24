@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #dddddd;
+            color: green;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--<ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a id="projectsload" href="projects.html">Projects</a></li>
+        <li id="afterselect"><a href="products.html">Products</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="navmenueditor.html"><img src="Siteimg3.jpg" style="width:25px"></a></li>
+    </ul>-->
+
+    <ul id="navbar">
+        <li><button type="button" id="loadhome" class="navbuttons">Home</button></li>
+        <li><button type="button" id="loadprojects" class="navbuttons">Projects</button></li>
+        <li><button type="button" id="loadproducts" class="navbuttons">Products</button></li>
+        <li><button type="button" id="loadarticles" class="navbuttons">Articles</button></li>
+        <li><button type="button" id="loadnews" class="navbuttons">News</button></li>
+        <li><button type="button" id="loadnaveditor" class="navbuttons"><img src="Siteimg3.jpg" style="width:25px"></button></li>
+
+    </ul>
+
+    <div id="jqueryembed" class="htmlembeddiv">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+        <script>
+            /*var newfav = $("<li>");
+            newfav.html("<a href='articles.html'>Articles</a>");
+            $("ul #afterselect").append(newfav);*/
+            //The code for each of the buttons  .start
+                $("#loadprojects").click(function(){
+                    $(".iframe-container iframe").attr("src","projects.html");
+                });
+
+                $("#loadhome").click(function(){
+                    $(".iframe-container iframe").attr("src","index.html");
+                });
+            //.end
+
+            var screenheight = screen.height;
+
+            if (screenheight => 800) then {
+                $(".iframe-container iframe").css("height", "1000px");
+            }
+
+
+            $("#navbar").show();
+        </script>
+    </div>
+    <div class="iframe-container">
+        <iframe src="index.html" class="framedisplay"></iframe>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Agastya Mishra</title>
+    <link rel="stylesheet" href="../Universal-files/style.css">
+    <script src="script.js"></script>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #dddddd;
+            color: green;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+        }
+
+        
+    </style>
+    
+
+</head>
+
+<body>
+    <div id="filename">
+    </div>
+    <include src="header.html"></include>
+    <ul id="navbar">
+        <li><a id="projectsload" href="../Projects/projects.html">Projects</a></li>
+        <li id="afterselect"><a href="../products.html">Products</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="../News/news.html">MyNews</a></li>
+        <li><a href="../Universal-files/navmenueditor.html"><img src="../Universal-files/Siteimg3.jpg" style="width:25px"></a></li>
+        <li><a href="darkindex.html"><img src="http://www.clipartbest.com/cliparts/bTy/xk6/bTyxk6kXc.png" style="width: 25px;" alt="Dark Mode"></a></li>
+    </ul>
+    <div id="jqueryembed" class="htmlembeddiv">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            /*var newfav = $("<li>");
+            newfav.html("<a href='articles.html'>Articles</a>");
+            $("ul #afterselect").append(newfav);*/
+
+            $(function () {
+                $('#filename').load("header.html");
+            });
+            $("document").ready(function(){            
+            })
+            
+
+        </script>
+        
+    </div>
+    <center>
+        <div class="header">
+            <h2>Agastya Mishra</h2>
+        </div>
+
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>About Me</h2>
+                    <img src="Siteimg1.jpeg" class="imgresponseclass" />
+                    <p style="font-size:15px">Me on my bike posing for a photo</p>
+                    <p style="font-size:25px">
+                        I love computers and coding and that is why I have lots of coding
+                        projects. I also like math and science. My science projects can
+                        be viewed <a href="../Projects/projects.html">here</a>.
+                        In my spare time (that is, i'm not doing things from school)
+                        I usually read books, work on my projects, play basketball, or
+                        chat/call my friends and play games or work on coding.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="leftcolumn" width="100%">
+                    <h3>COVID-19 Updates</h3>
+                    <div class="bingwidget" data-type="covid19" data-market="en-us" data-language="en-us" width="100%"></div>
+  
+                    <script src="https://www.bing.com/widget/bootstrap.answer.js" async=""></script>
+                </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>Trending</h2>
+                    <!--<img src="../webfindlogo.png" class="trendlogo" />
+                    <p>Web Find search engine comming soon!!!</p>-->
+                    <img src="../Universal-files/sitelogo.jpg" class="trendlogo">
+                    <p>The public beta of my site is offically launched!<!--<br><br>You will soon be able to download and run Infinity Hub to use my site offline as well as my products offline.--></p>
+                </div>
+                
+
+                
+                
+                <!--<div class="card">
+                    <h3>What's New</h3>
+                        <p>New Dark Mode!</p>
+                        <p>New projects added to project page.</p>
+                        <p>Faster and more efficient overall experience using jquery compressed.</p>
+                        <p>New App! Head to the MyNews tab or see below to access the beta version of MyNews.</p>
+                        <br>
+                        <p style="font-size: 10px;">Agastya Mishra Site v0.3.7 in beta stage.</p>
+                </div>-->
+
+                <div class="card">
+                    <h3>Latest News</h3>
+                    <iframe class= "newsiframe"style="background-color: #ffffff;" src="https://momentaryreview.com/widget/" name="momentary_review" width="100%" height="300" frameborder="0" marginwidth="2" marginheight="4"></iframe>
+                </div>
+                <div class="card">
+                    <h3>Popular Posts</h3>
+                    <script language="JavaScript" src="http://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fnews.softpedia.com%2FnewsRSS%2FGlobal-0.xml&num=3&desc=50>1&au=y&targ=xxxx&utf=y&pc=y"  charset="UTF-8" type="text/javascript"></script>
+                </div>
+            </div>
+        </div>
+            
+        <div class="footer" id="footer">
+            <ul>
+                <li><a href="darkindex.html#footer"><img src="http://www.clipartbest.com/cliparts/bTy/xk6/bTyxk6kXc.png" style="width: 25px;" alt="Dark Mode"></a></li>
+             </ul>
+
+        </div>
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/bowser@2.9.0/es5.js"></script>
+    <script src="2-bowser.js"></script>
+    <script>
+var sBrowser, sUsrAg = navigator.userAgent;
+if (sUsrAg.indexOf("Firefox") > -1) {
+  sBrowser = "Mozilla Firefox";
+  // "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
+} else if (sUsrAg.indexOf("SamsungBrowser") > -1) {
+  sBrowser = "Samsung Internet";
+  // "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36
+} else if (sUsrAg.indexOf("Opera") > -1 || sUsrAg.indexOf("OPR") > -1) {
+  sBrowser = "Opera";
+  // "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106"
+} else if (sUsrAg.indexOf("Trident") > -1) {
+  sBrowser = "Microsoft Internet Explorer";
+  // "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko"
+} else if (sUsrAg.indexOf("Edge") > -1) {
+  sBrowser = "Microsoft Edge";
+  // "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"
+} else if (sUsrAg.indexOf("Chrome") > -1) {
+  sBrowser = "Google Chrome or Chromium";
+  // "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36"
+} else if (sUsrAg.indexOf("Safari") > -1) {
+  sBrowser = "Apple Safari";
+  // "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306"
+} else {
+  sBrowser = "unknown";
+}
+
+//alert("You are using: " + sBrowser);
+console.log("You are using: " + sBrowser);
+if (sBrowser == "Opera") {
+        window.location.replace("../Other/browsernotsupported.html");
+    }
+if (sBrowser == "Microsoft Internet Explorer") {
+        window.location.replace("../Other/browsernotsupported.html");
+    }
+if (result.browser.name == Chrome){
+        window.location.replace("../Other/browsernotsupported.html");
+
+}
+    window.addEventListener("load", function() {
+  // PARSE USER AGENT
+  var result = bowser.getParser(navigator.userAgent).getResult();
+ 
+  // BROWSER INFO
+  console.log(result.browser.name);
+  console.log(result.browser.version);
+  console.log(result.engine);
+ 
+  // OPERATING SYSTEM
+  console.log(result.os.name);
+  console.log(result.os.version);
+  console.log(result.os.versionName);
+ 
+  // PLATFORM
+  console.log(result.platform.type);
+});
+    </script>
+</body>
+
+</html>
