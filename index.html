@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Agastya Mishra</title>
-    <link rel="stylesheet" href="../Universal-files/style.css">
+    <link rel="stylesheet" href="Universal-files/style.css" id="theme">
     <script src="script.js"></script>
     <style>
         ul {
@@ -24,7 +24,6 @@
             display: block;
             padding: 8px;
         }
-
         
     </style>
     
@@ -36,24 +35,15 @@
     </div>
     <include src="header.html"></include>
     <ul id="navbar">
+        <li><a href="index.html"><button>Home</button></a></li>
         <li><a id="projectsload" href="Projects/projects.html">Projects</a></li>
         <li id="afterselect"><a href="products.html">Products</a></li>
         <li><a href="articles.html">Articles</a></li>
         <li><a href="News/news.html">MyNews</a></li>
         <li><a href="Universal-files/navmenueditor.html"><img src="Universal-files/Siteimg3.jpg" style="width:25px"></a></li>
-        <li><a href="Home/darkindex.html"><img src="http://www.clipartbest.com/cliparts/bTy/xk6/bTyxk6kXc.png" style="width: 25px;" alt="Dark Mode"></a></li>
+        <li><button onclick="switchSheet()"><img src="http://www.clipartbest.com/cliparts/bTy/xk6/bTyxk6kXc.png" class="darkbtn" style="width: 25px;" alt="Dark Mode"></button></li>
     </ul>
-    <div id="jqueryembed" class="htmlembeddiv">
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script>
-
-            $(function () {
-                $('#filename').load("header.html");
-            });
-
-        </script>
-        
-    </div>
+    
     <center>
         <div class="header">
             <h2>Agastya Mishra</h2>
@@ -63,12 +53,12 @@
             <div class="leftcolumn">
                 <div class="card">
                     <h2>About Me</h2>
-                    <img src="Siteimg1.jpeg" class="imgresponseclass" />
+                    <img src="Home/Siteimg1.jpeg" class="imgresponseclass" />
                     <p style="font-size:15px">Me on my bike posing for a photo</p>
                     <p style="font-size:25px">
                         I love computers and coding and that is why I have lots of coding
                         projects. I also like math and science. My science projects can
-                        be viewed <a href="../Projects/projects.html">here</a>.
+                        be viewed <a href="Projects/projects.html">here</a>.
                         In my spare time (that is, i'm not doing things from school)
                         I usually read books, work on my projects, play basketball, or
                         chat/call my friends and play games or work on coding.
@@ -76,19 +66,14 @@
                 </div>
                 
             </div>
-            <div class="leftcolumn" width="100%">
-                    <h3>COVID-19 Updates</h3>
-                    <div class="bingwidget" data-type="covid19" data-market="en-us" data-language="en-us" width="100%"></div>
-  
-                    <script src="https://www.bing.com/widget/bootstrap.answer.js" async=""></script>
-                </div>
+
             <div class="rightcolumn">
                 <div class="card">
                     <h2>Trending</h2>
                     <!--<img src="../webfindlogo.png" class="trendlogo" />
                     <p>Web Find search engine comming soon!!!</p>-->
                     <img src="Universal-files/sitelogo.jpg" class="trendlogo">
-                    <p>The public beta of my site is offically launched!<!--<br><br>You will soon be able to download and run Infinity Hub to use my site offline as well as my products offline.--></p>
+                    <p>My site is offically launched!<!--<br><br>You will soon be able to download and run Infinity Hub to use my site offline as well as my products offline.--></p>
                 </div>
                 
 
@@ -122,6 +107,21 @@
 
         </div>
     </center>
+    <div id="jqueryembed" class="htmlembeddiv">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+             function switchSheet() {
+                let theme = document.getElementById("theme");
+
+                if (theme.getAttribute("href") == "Universal-files/style.css") {
+                    theme.href = "Universal-files/darkstyle.css";
+                } else {
+                    theme.href = "Universal-files/style.css";
+                }
+            }
+        </script>
+        
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bowser@2.9.0/es5.js"></script>
     <script src="2-bowser.js"></script>
     <script>

@@ -15,7 +15,7 @@ body {
     padding: 30px;
     font-size: 40px;
     text-align: center;
-    background: white;
+    background: black;
 }
 
 .spacer {
@@ -32,6 +32,10 @@ body {
     font-size: 40px;
     text-align: center;
     background:black;
+}
+
+.newsiframe {
+    background-color: gray;
 }
 
 /* Create two unequal columns that floats next to each other */
