@@ -95,7 +95,7 @@
                 </div>
                 <div class="card">
                     <h3>Popular Posts</h3>
-                    <script language="JavaScript" src="http://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fnews.softpedia.com%2FnewsRSS%2FGlobal-0.xml&num=3&desc=50>1&au=y&targ=xxxx&utf=y&pc=y"  charset="UTF-8" type="text/javascript"></script>
+                    <script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fnews.softpedia.com%2FnewsRSS%2FGlobal-0.xml&num=3&desc=50>1&au=y&targ=xxxx&utf=y&pc=y"  charset="UTF-8" type="text/javascript"></script>
                 </div>
             </div>
         </div>
@@ -123,9 +123,8 @@
         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bowser@2.9.0/es5.js"></script>
-    <script src="2-bowser.js"></script>
     <script>
-var sBrowser, sUsrAg = navigator.userAgent;
+/*var sBrowser, sUsrAg = navigator.userAgent;
 if (sUsrAg.indexOf("Firefox") > -1) {
   sBrowser = "Mozilla Firefox";
   // "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
@@ -154,16 +153,13 @@ if (sUsrAg.indexOf("Firefox") > -1) {
 //alert("You are using: " + sBrowser);
 console.log("You are using: " + sBrowser);
 if (sBrowser == "Opera") {
-        window.location.replace("../Other/browsernotsupported.html");
+        window.location.replace("Other/browsernotsupported.html");
     }
 if (sBrowser == "Microsoft Internet Explorer") {
-        window.location.replace("../Other/browsernotsupported.html");
-    }
-if (result.browser.name == Chrome){
-        window.location.replace("../Other/browsernotsupported.html");
+        window.location.replace("Other/browsernotsupported.html");
+    }*/
 
-}
-    window.addEventListener("load", function() {
+window.addEventListener("load", function() {
   // PARSE USER AGENT
   var result = bowser.getParser(navigator.userAgent).getResult();
  
@@ -171,6 +167,8 @@ if (result.browser.name == Chrome){
   console.log(result.browser.name);
   console.log(result.browser.version);
   console.log(result.engine);
+  browsername = result.browser.name;
+  console.log(browsername);
  
   // OPERATING SYSTEM
   console.log(result.os.name);
@@ -179,7 +177,15 @@ if (result.browser.name == Chrome){
  
   // PLATFORM
   console.log(result.platform.type);
+
+  if (browsername == "Chrome"){
+        console.log("blocked");
+        window.location.replace("Other/browsernotsupported.html");
+
+}
 });
+
+
     </script>
 </body>
 
