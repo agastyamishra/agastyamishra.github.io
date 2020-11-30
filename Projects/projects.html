@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Projects - Agastya Mishra</title>
-	<link rel="stylesheet" href="../Universal-files/style.css">
+	<link rel="stylesheet" href="../Universal-files/style.css" id="theme">
 	<script src="../Universal-files/script.js"></script>
 
 	<style>
@@ -38,7 +38,7 @@
 		<li><a href="https://agastyamishra.github.io/articles.html">Articles</a></li>
 		<li><a href="../News/news.html">MyNews</a></li>
 		<li><a href="../Universal-files/navmenueditor.html"><img src="../Universal-files/Siteimg3.jpg" style="width:25px"></a></li>
-		<li><a href="darkprojects.html"><img src="../Universal-files/darkmode.png" style="width: 25px;" alt="Dark Mode"></a></li>
+        <li><button onclick="switchSheet()"><img src="../Universal-files/darkmode.png" class="darkbtn" style="width: 25px;" alt="Dark Mode"></button></li>
 
 	</ul>		
 
@@ -63,11 +63,17 @@
 		</center>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-		<script>
-			/*var newfav = $("<li>");
-			newfav.html("<a href='articles.html'>Articles</a>");
-			$("ul #afterselect").append(newfav);*/
-		</script>
+        <script>
+             function switchSheet() {
+                let theme = document.getElementById("theme");
+
+                if (theme.getAttribute("href") == "../Universal-files/style.css") {
+                    theme.href = "../Universal-files/darkstyle.css";
+                } else {
+                    theme.href = "../Universal-files/style.css";
+                }
+            }
+        </script>
 
 </body>
 
