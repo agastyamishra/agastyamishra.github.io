@@ -6,7 +6,7 @@
 	<title>
 		MyNews - Agastya Mishra
 	</title>
-	<link rel="stylesheet" href="../Universal-files/style.css">
+	<link rel="stylesheet" href="../Universal-files/style.css" id="theme">
 	<script src="../Universal-files/script.js"></script>
 	<style>
 		ul {
@@ -38,15 +38,21 @@
 		<li><a href="news.html"><button>MyNews</button></a></li>
 		<li><a href="../Universal-files/navmenueditor.html"><img src="../Universal-files/Siteimg3.jpg"
                     style="width:25px"></a></li>
-        <li><a href="darknews.html"><img src="../Universal-files/darkmode.png" style="width: 25px;" alt="Dark Mode"></a></li>
+		<li><button onclick="switchSheet()"><img src="../Universal-files/darkmode.png" class="darkbtn" style="width: 25px;" alt="Dark Mode"></button></li>
 
 	</ul>
-	<script src="https://code.jquery.com/jquery-3.5.1.js"
-		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script>
+		 function switchSheet() {
+			let theme = document.getElementById("theme");
 
-
-    </script>
+			if (theme.getAttribute("href") == "../Universal-files/style.css") {
+				theme.href = "../Universal-files/darkstyle.css";
+			} else {
+				theme.href = "../Universal-files/style.css";
+			}
+		}
+	</script>
     <h3>MyNews (beta)</h3>
     <p>
         Our news page is currently under development.
