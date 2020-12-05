@@ -15,18 +15,22 @@
     <img src="../Universal-files/sitelogo.jpg" style="width: 50px;">
 	<h5>Agastya Mishra</h5>
 	<input type="text" id="code-textbox" placeholder="Enter Code here...">
-	<input type="button" id="go-button" value="Go">
+	<button id="go-button" onclick="gocode();">Go</button>
     <h1>Your browser isn't supported. To visit my site, please visit it in Mozilla Firefox, Apple Safari, Samsung Internet, or Microsoft Edge.</h1>
 	<button><a href="https://www.mozilla.org/en-US/firefox/download/thanks/">Download Firefox</a></button>
 	<button><a href="https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser&hl=en&gl=us">Download Samsung Internet (android only)</a></button>
     <button><a href="https://www.microsoft.com/en-us/edge">Download Microsoft Edge</a></button>
 	<button>Apple Safari is the default browser on iOS, iPadOS, and MacOS</button>
 	<script>
-if(document.getElementById("go-button").clicked == true)
-{
-	window.location.replace("https://agastyamishra.github.io/"+ document.getElementById("code-textbox").value + ".html")
+function gocode() {
 
-}
+	if(document.getElementById("code-textbox").value == "cBSwDC"){
+	window.location.replace("https://agastyamishra.github.io/cBSwDC.html");
+	}else{
+		alert("Invalid Code");
+	}
+}	
+
 		
 	</script>
 
