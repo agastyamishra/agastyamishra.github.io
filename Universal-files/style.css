@@ -25,8 +25,6 @@ body {
 }
 
 .projectcard {
-    border: double;
-    border-color: black;
     padding: 30px;
     font-size: 40px;
     text-align: center;
@@ -73,7 +71,7 @@ body {
 
 
 .imgresponseclass {
-    width:100%;
+    width:40%;
     height:auto;
 }
 

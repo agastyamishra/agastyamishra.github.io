@@ -53,7 +53,8 @@
         </div>
 
         <div class="row">
-            <div class="leftcolumn">
+
+                    <!--<div class="leftcolumn">
                 <div class="card">
                     <h2>About Me</h2>
                     <img src="Home/Siteimg1.jpeg" class="imgresponseclass" />
@@ -66,17 +67,34 @@
                         I usually read books, work on my projects, play basketball, or
                         chat/call my friends and play games or work on coding.
                     </p>
-                </div>
+                </div>-->
                 
             </div>
+            <div class="row">
+
+                <div class="leftcolumn">
+                    <div class="card">
+                        <h2>This is the browser wars!</h2>
+                        <img src="https://www.mozilla.org/media/img/firefox/compare/compare-browser-windows.3c11dd6787cd.png" class="imgresponseclass" />
+                        <p style="font-size:15px">Comparing the top seven browsers</p>
+                        <p style="font-size:25px">
+                            Since your browser is your gateway to the internet, speed, security, privacy and utility are paramount. In recent years, Google Chrome has been the browser of 
+                            choice for many. But at a time when online ads seem to follow us everywhere and data breaches are a fixture of news headlines, a lot of people are starting to 
+                            demand more privacy and respect from their browser. Here we’ll compare Firefox, Chrome, Edge, Safari, Opera, Brave and Internet Explorer to help you choose your browser.
+                        </p>
+                        <button onclick="launchbestbrowser();">Open Article</button>
+                </div>
+            
+        </div>
+
 
             <div class="rightcolumn">
                 <div class="card">
                     <h2>Trending</h2>
-                    <!--<img src="../webfindlogo.png" class="trendlogo" />
-                    <p>Web Find search engine comming soon!!!</p>-->
-                    <img src="Universal-files/sitelogo.jpg" class="trendlogo">
-                    <p>My site is offically launched!<!--<br><br>You will soon be able to download and run Infinity Hub to use my site offline as well as my products offline.--></p>
+                    <img src="webfindlogo.png" class="trendlogo" />
+                    <p>Web Find search engine comming soon!!!</p>
+                    <!--<img src="Universal-files/sitelogo.jpg" class="trendlogo">
+                    <p>My site is offically launched!<br><br>You will soon be able to download and run Infinity Hub to use my site offline as well as my products offline.</p>-->
                 </div>
                 
 
@@ -91,15 +109,17 @@
                         <br>
                         <p style="font-size: 10px;">Agastya Mishra Site v0.3.7 in beta stage.</p>
                 </div>-->
+                <div class="card">
+                    <h3>Popular Posts</h3>
+                    <!--<script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fnews.softpedia.com%2FnewsRSS%2FGlobal-0.xml&num=3&desc=50>1&au=y&targ=xxxx&utf=y&pc=y"  charset="UTF-8" type="text/javascript"></script>-->
+                    We are now writing our own stories!                         <button onclick="launchbestbrowser();">Open our first article!</button>
 
+                </div>
                 <div class="card">
                     <h3>Latest News</h3>
                     <iframe class= "newsiframe"style="background-color: #ffffff;" src="https://momentaryreview.com/widget/" name="momentary_review" width="100%" height="300" frameborder="0" marginwidth="2" marginheight="4"></iframe>
                 </div>
-                <div class="card">
-                    <h3>Popular Posts</h3>
-                    <script language="JavaScript" src="https://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fnews.softpedia.com%2FnewsRSS%2FGlobal-0.xml&num=3&desc=50>1&au=y&targ=xxxx&utf=y&pc=y"  charset="UTF-8" type="text/javascript"></script>
-                </div>
+
             </div>
         </div>
             
@@ -121,6 +141,10 @@
                 } else {
                     theme.href = "Universal-files/style.css";
                 }
+            }
+
+            function launchbestbrowser() {
+                open("Articles/7bestbrowser.html", "Seven of the best browsers - Articles - Agastya Mishra");
             }
         </script>
         
