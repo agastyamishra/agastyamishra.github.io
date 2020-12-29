@@ -26,8 +26,6 @@ body {
 }
 
 .projectcard {
-    border: double;
-    border-color: white;
     padding: 30px;
     font-size: 40px;
     text-align: center;
@@ -60,8 +58,6 @@ body {
 }
 
 .projectcard {
-    border: double;
-    border-color:white;
     padding: 30px;
     font-size: 40px;
     text-align: center;
