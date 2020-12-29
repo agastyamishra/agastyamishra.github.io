@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,12 +35,12 @@
     </div>
     <include src="header.html"></include>
     <ul id="navbar">
-        <li><a href="index.html"><button>Home</button></a></li>
-        <li><a id="projectsload" href="Projects/projects.html">Projects</a></li>
+        <li><a href="/"><button>Home</button></a></li>
+        <li><a id="projectsload" href="Projects/projects">Projects</a></li>
         <li id="afterselect"><a href="products.html">Products</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="News/news.html">MyNews</a></li>
-        <li><a href="Universal-files/navmenueditor.html"><img src="Universal-files/Siteimg3.jpg" style="width:25px"></a></li>
+        <li><a href="articles">Articles</a></li>
+        <li><a href="News/news">MyNews</a></li>
+        <li><a href="Universal-files/navmenueditor"><img src="Universal-files/Siteimg3.jpg" style="width:25px"></a></li>
         <li><button onclick="switchSheet()"><img src="Universal-files/darkmode.png" class="darkbtn" style="width: 25px;" alt="Dark Mode"></button></li>
        
     </ul>
@@ -166,10 +166,10 @@ if (sUsrAg.indexOf("Firefox") > -1) {
 //alert("You are using: " + sBrowser);
 console.log("You are using: " + sBrowser);
 if (sBrowser == "Opera") {
-        window.location.replace("Other/browsernotsupported.html");
+        window.location.replace("Other/browsernotsupported");
     }
 if (sBrowser == "Microsoft Internet Explorer") {
-        window.location.replace("Other/browsernotsupported.html");
+        window.location.replace("Other/browsernotsupported");
     }*/
 
 window.addEventListener("load", function() {
