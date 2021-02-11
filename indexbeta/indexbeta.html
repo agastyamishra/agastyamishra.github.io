@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Home - Agastya Mishra</title>
+  <meta name="generator" content="Google Web Designer 10.0.1.1204">
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-div-1u2f {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 1192px;
+      height: 50px;
+    }
+    .gwd-img-umi4 {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 111px;
+      height: 50px;
+    }
+    .gwd-p-693l {
+      position: absolute;
+      left: 122px;
+      top: 11px;
+      width: 131px;
+      height: 26px;
+      font-size: 30px;
+    }
+    .gwd-p-jtr0 {
+      transform-style: preserve-3d;
+      transform: translate3d(142px, 0px, 0px) rotateZ(-0.0976909deg);
+    }
+    .gwd-p-oz6y {
+      transform-style: preserve-3d;
+      transform: translate3d(284px, 1px, 0px) rotateZ(-0.00374899deg);
+    }
+    .darkbtn {
+      position: absolute;
+      left: 548px;
+      top: 10.8883px;
+      width: 48px;
+      height: 39.1117px;
+    }
+    .gwd-div-1n0i {
+      position: absolute;
+      left: 0px;
+      top: 50px;
+      width: 750.983px;
+      height: 469.927px;
+      background-color: rgb(255, 255, 255);
+    }
+    .gwd-p-10lt {
+      position: absolute;
+      width: 380.97px;
+      height: 50px;
+      left: 227px;
+      top: 69px;
+      font-size: 40px;
+    }
+    .gwd-span-oo2o {
+      position: absolute;
+      top: 119px;
+      width: 516.18px;
+      height: 50px;
+      font-size: 40px;
+      left: 279px;
+    }
+    .gwd-span-1i7s {
+      font-size: 20px;
+    }
+    .gwd-div-1vzc {
+      position: absolute;
+      left: 8px;
+      top: 192.325px;
+      width: 730px;
+      height: 327.597px;
+      background-color: rgb(255, 255, 255);
+    }
+  </style>
+</head>
+
+<body class="htmlNoPages">
+  <div class="gwd-div-1u2f"></div>
+  <img class="gwd-img-umi4" src="https://agastyamishra.github.io/Universal-files/sitelogo.jpg" alt="Home">
+  <p class="gwd-p-693l">Projects</p>
+  <p class="gwd-p-693l gwd-p-oz6y">MyNews</p>
+  <p class="gwd-p-693l gwd-p-jtr0">Articles</p>
+  <button onclick="switchSheet()" class="">
+    <img src="https://agastyamishra.github.io/Universal-files/darkmode.png" class="darkbtn" style="width: 30px;" alt="Dark Mode">
+  </button>
+  <div id="script">
+    <div id="jqueryembed" class="htmlembeddiv">
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script>
+        function switchSheet() {
+          let theme = document.getElementById("theme");
+
+          if (theme.getAttribute("href") == "Universal-files/style.css") {
+            theme.href = "Universal-files/darkstyle.css";
+          } else {
+            theme.href = "Universal-files/style.css";
+          }
+        }
+
+        function launchbestbrowser() {
+          open("articles", "Articles - Agastya Mishra");
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bowser@2.9.0/es5.js"></script>
+      <script>
+        /*var sBrowser, sUsrAg = navigator.userAgent;
+                if (sUsrAg.indexOf("Firefox") > -1) {
+                  sBrowser = "Mozilla Firefox";
+                  // "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0"
+                } else if (sUsrAg.indexOf("SamsungBrowser") > -1) {
+                  sBrowser = "Samsung Internet";
+                  // "Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-G955F Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/9.4 Chrome/67.0.3396.87 Mobile Safari/537.36
+                } else if (sUsrAg.indexOf("Opera") > -1 || sUsrAg.indexOf("OPR") > -1) {
+                  sBrowser = "Opera";
+                  // "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 OPR/57.0.3098.106"
+                } else if (sUsrAg.indexOf("Trident") > -1) {
+                  sBrowser = "Microsoft Internet Explorer";
+                  // "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; Zoom 3.6.0; wbx 1.0.0; rv:11.0) like Gecko"
+                } else if (sUsrAg.indexOf("Edge") > -1) {
+                  sBrowser = "Microsoft Edge";
+                  // "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299"
+                } else if (sUsrAg.indexOf("Chrome") > -1) {
+                  sBrowser = "Google Chrome or Chromium";
+                  // "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/66.0.3359.181 Chrome/66.0.3359.181 Safari/537.36"
+                } else if (sUsrAg.indexOf("Safari") > -1) {
+                  sBrowser = "Apple Safari";
+                  // "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1 980x1306"
+                } else {
+                  sBrowser = "unknown";
+                }
+
+                //alert("You are using: " + sBrowser);
+                console.log("You are using: " + sBrowser);
+                if (sBrowser == "Opera") {
+                        window.location.replace("Other/browsernotsupported");
+                    }
+                if (sBrowser == "Microsoft Internet Explorer") {
+                        window.location.replace("Other/browsernotsupported");
+                    }*/
+
+        window.addEventListener("load", function() {
+          // PARSE USER AGENT
+          var result = bowser.getParser(navigator.userAgent).getResult();
+
+          // BROWSER INFO
+          console.log(result.browser.name);
+          console.log(result.browser.version);
+          console.log(result.engine);
+          browsername = result.browser.name;
+          console.log(browsername);
+
+          // OPERATING SYSTEM
+          console.log(result.os.name);
+          console.log(result.os.version);
+          console.log(result.os.versionName);
+
+          // PLATFORM
+          console.log(result.platform.type);
+
+          if (browsername == "Chrome") {
+            console.log("blocked");
+            window.location.replace("Other/browsernotsupported.html");
+
+          }
+        });
+      </script>
+    </div>
+  </div>
+  <div class="gwd-div-1n0i"></div>
+  <p class="gwd-p-10lt">3D Project</p><span class="gwd-span-oo2o"><span class="gwd-span-1i7s">Trees</span><br>
+  
+  </span>
+  <div class="gwd-div-1vzc"></div>
+</body>
+
+</html>
