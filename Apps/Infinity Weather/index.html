@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Infinity Weather</title>
+</head>
+
+<body>
+
+    <div id="header">    
+        <h2 id="header_title">Infinity Weather</h2>
+        <a href="javascript:window.location = location"><img src="images/reload-symbol.png" alt="Refresh for latest information" width="150px" id="reload-symbol"></a>
+    </div>   
+   <!-- <p id="info_popup-nd">Try our beta version! It includes save data to cloud, a new UI, and more!  <a href="/beta-version">Try now!</a>  <button id="dismiss_popup">Dismiss</button></p>-->
+     <div id="location_sidebar">
+        <input type="text" name="search" placeholder="Search City.." id="addCityText">
+        <input type="button" onclick="newCity();" value="Show me the weather for this city!"> 
+        <div id="saved_locations-sidebar" style="margin-left: 6px;">        
+            <h4>Saved Locations (Coming soon!)</h4>
+            <p>Click the star button to save cities</p>
+        </div>
+        <br>
+        <!-- <div id="around_theworld-sidebar" style="margin-left: 6px;">    
+            <h4>Around the world</h4>
+            <ul id="around_theworld-sidebar--location_list">
+                <li><button>New York</button></li>
+                <li><button>Los Angeles</button></li>
+                <li><button>Chicago</button></li>
+                <li><button>Houston</button></li>
+                <li><button>Philadelphia</button></li>
+                <li><button>San Francisco</button></li> 
+                <li>More locations coming soon!</li> 
+
+                    More cities:
+                    Mexico City
+                    Tokyo
+                    Sao Paulo
+                    London      
+                    Paris
+                    Venice
+                
+            </ul> -->
+        </div> 
+
+    </div>
+    <div id="weather_info">  
+        <h1 id="location_city" class="location">Louisville</h1>
+        <!--<h2 id="location_state" class="location">Kentucky</h2>
+        <h3 id="location_country" class="location">United States</h3>
+        <p id="update_time">Updated at 4:45 PM</p>
+        <br><br>
+        <h2 id="weather_status">Sunny</h2>-->
+        <br>
+        <h1 id="current_temp">22°C</h1>
+    </div>
+    <br>     <br>
+    <br>
+    <br>
+
+
+    <p id="footer">Contact Infinity at weatherapp-infinity@outlook.com</p>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script>
+  /*  var dismissPopup_button = document.getElementById("dismiss_popup");
+function dismissButtonClick (){
+$("#info_popup-nd").hide();
+} */
+
+//dismissPopup_button.addEventListener("click", dismissButtonClick);
+
+//Refresh button:
+function refresh (){
+    window.refresh();
+}
+//Refresh button-end
+$("#location_city").html(cityName);
+
+//Around the world error script
+$("#around_theworld-sidebar--location_list").html("<h6>  An error occured while loading locations. </p>")
+//End Around the world error script
+
+//Location Sidebar height
+var sidebarHeight = screen.availHeight
+console.log(sidebarHeight)
+$("#location_sidebar").height(sidebarHeight)
+
+</script>
+</body>
+
+</html>
