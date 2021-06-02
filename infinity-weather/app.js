@@ -19,8 +19,8 @@ xmlhttp.onreadystatechange = function() {
     document.getElementById("current_temp").innerHTML = trimmedTemp + "°C";
   }
 };
-xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=ae57b07a14d0843eb4fa4e214552bc52&&units=metric", true);
-xmlhttp.send();
+xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=ae57b07a14d0843eb4fa4e214552bc52&&units=metric", true);
+xmlhttp.send()  ;
 
 
 function newCity() {
@@ -42,7 +42,7 @@ function newCity() {
       document.getElementById("current_temp").innerHTML = "Error while loading weather information" 
       document.getElementById("current_temp").style.fontSize = "30px" }
   };
-  xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=ae57b07a14d0843eb4fa4e214552bc52&&units=metric", true);
+  xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=ae57b07a14d0843eb4fa4e214552bc52&&units=metric", true);
   xmlhttp.send();
 
 }

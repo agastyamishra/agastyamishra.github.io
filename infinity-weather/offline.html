@@ -12,17 +12,16 @@
 
 <body>
 
-    <div id="header">    
+    <div id="header" style="background-color: gainsboro;">    
         <h2 id="header_title">Infinity Weather</h2>
-        <a href="javascript:window.location = location"><img src="images/reload-symbol.png" alt="Refresh for latest information" width="150px" id="reload-symbol"></a>
+        <a href="javascript:window.location = location"><img src="images/reload-symbol.png" alt="Refresh for latest information" width="150px" id="reload-symbol" style="background-color: rgba(rgb(196, 196, 196, 0.5), green, blue, alpha);"></a>
     </div>   
    <!-- <p id="info_popup-nd">Try our beta version! It includes save data to cloud, a new UI, and more!  <a href="/beta-version">Try now!</a>  <button id="dismiss_popup">Dismiss</button></p>-->
      <div id="location_sidebar">
-        <input type="text" name="search" placeholder="Search City.." id="addCityText">
-        <input type="button" onclick="newCity();" value="Show me the weather for this city!"> 
+        <input type="text" name="search" placeholder="You are offline. Search is currently unavailable." style="width: 100%;">
         <div id="saved_locations-sidebar" style="margin-left: 6px;">        
-            <h4>Saved Locations (Coming soon!)</h4>
-            <p>Click the star button to save cities</p>
+            <h4>You are currently offline.</h4>
+            <p>Infinity Weather cannot connect to the server. Showing last saved data.</p>
         </div>
         <br>
         <!-- <div id="around_theworld-sidebar" style="margin-left: 6px;">    
@@ -67,28 +66,8 @@
 <script src="app.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
-  /*  var dismissPopup_button = document.getElementById("dismiss_popup");
-function dismissButtonClick (){
-$("#info_popup-nd").hide();
-} */
-
-//dismissPopup_button.addEventListener("click", dismissButtonClick);
-
-//Refresh button:
-function refresh (){
-    window.refresh();
-}
-//Refresh button-end
-$("#location_city").html(cityName);
-
-//Around the world error script
-$("#around_theworld-sidebar--location_list").html("<h6>  An error occured while loading locations. </p>")
-//End Around the world error script
-
-//Location Sidebar height
-var sidebarHeight = screen.availHeight
-console.log(sidebarHeight)
-$("#location_sidebar").height(sidebarHeight)
+var offlineTemp = document.getElementById("current_temp").innerHTML;
+console.log(offlineTemp)
 
 </script>
 </body>
