@@ -18,8 +18,7 @@
     </div>   
    <!-- <p id="info_popup-nd">Try our beta version! It includes save data to cloud, a new UI, and more!  <a href="/beta-version">Try now!</a>  <button id="dismiss_popup">Dismiss</button></p>-->
      <div id="location_sidebar">
-        <input type="text" name="search" placeholder="Search City.." id="addCityText">
-        <input type="button" onclick="newCity();" value="Show me the weather for this city!"> 
+
         <div id="saved_locations-sidebar" style="margin-left: 6px;">        
             <h4>Saved Locations (Coming soon!)</h4>
             <p>Click the star button to save cities</p>
@@ -49,6 +48,8 @@
 
     </div>
     <div id="weather_info">  
+        <input type="text" name="search" placeholder="Search City.." id="addCityText">
+        <input type="button" onclick="newCity();" value="Show me the weather for this city!"> 
         <h1 id="location_city" class="location">Louisville</h1>
         <!--<h2 id="location_state" class="location">Kentucky</h2>
         <h3 id="location_country" class="location">United States</h3>
@@ -89,6 +90,14 @@ $("#around_theworld-sidebar--location_list").html("<h6>  An error occured while 
 var sidebarHeight = screen.availHeight
 console.log(sidebarHeight)
 $("#location_sidebar").height(sidebarHeight)
+
+function sideBarHide (){
+    if (screen.availWidth < 570) {
+        $("#location_sidebar").hide();
+    }
+}
+
+sideBarHide();
 
 </script>
 </body>
