@@ -16,6 +16,16 @@ xmlhttp.onreadystatechange = function() {
     console.log(weatherTemp);
     var floatTemp = weatherTemp.temp
     var trimmedTemp = parseInt(floatTemp)
+    var feelLike = parseInt(weatherTemp.feels_like)
+    var minTemp = parseInt(weatherTemp.temp_min)
+    var maxTemp = parseInt(weatherTemp.temp_max)
+    document.getElementById("feels_like").innerHTML = "Feels Like: " + feelLike + "°C"
+    document.getElementById("min_temp").innerHTML = "Min: " + minTemp + "°C"
+    document.getElementById("max_temp").innerHTML = "Max: " + maxTemp + "°C"
+    var uiCityName = weather.name
+    console.log(uiCityName)
+    var countryName = weather.sys
+    document.getElementById("location_country").innerHTML = countryName.country
     document.getElementById("current_temp").innerHTML = trimmedTemp + "°C";
   }
 };
@@ -39,12 +49,12 @@ function newCity() {
     var feelLike = parseInt(weatherTemp.feels_like)
     var minTemp = parseInt(weatherTemp.temp_min)
     var maxTemp = parseInt(weatherTemp.temp_max)
-    var pressure = parseInt(weatherTemp.pressure)
-    var humidity = parseInt(weatherTemp.humidity)
-    var uiCityName = weather.name + ", " + cityName
+    var uiCityName = weather.name
     console.log(uiCityName)
+    var countryName = weather.sys
+    document.getElementById("location_country").innerHTML = countryName.country
     var sky = weather.weather
-    document.getElementById("sky").innerHTML = "The sky is " + sky.main
+    //document.getElementById("sky").innerHTML = "The sky is " + sky.main
     console.log(sky)
     document.getElementById("feels_like").innerHTML = "Feels Like: " + feelLike + "°C"
     document.getElementById("min_temp").innerHTML = "Min: " + minTemp + "°C"
