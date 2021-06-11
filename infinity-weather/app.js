@@ -7,6 +7,14 @@ function webWidth (){
 
 webWidth();
 
+ var input = document.getElementById("addCityText");
+  input.addEventListener("keyup", function(event) {
+  event.preventDefault();
+   if (event.key === 'Enter') {
+       document.getElementById("Submit-button").click();
+   }
+ });
+
 var cityName = "Louisville"
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {

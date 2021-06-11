@@ -7,7 +7,7 @@
         
         body {
             background: #fdfdfd;
-            /* background-image: url(https://i2.wp.com/www.miggardencare.co.uk/wp-content/uploads/2016/04/sunny-background.jpg);*/
+            background-image: url(images/sky.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -39,6 +39,14 @@
           /* When the input field gets focus, change its width to 100% */
           input[type=text]:focus {
             width: 30%;
+          }
+
+          #Submit-button {
+              background-color: aqua;
+              height: 3em;
+              width: 5em;
+
+              
           }
 
         #header {
