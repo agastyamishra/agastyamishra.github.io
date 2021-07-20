@@ -181,29 +181,8 @@ if (sBrowser == "Microsoft Internet Explorer") {
     }*/
 
 window.addEventListener("load", function() {
-  // PARSE USER AGENT
-  var result = bowser.getParser(navigator.userAgent).getResult();
  
-  // BROWSER INFO
-  console.log(result.browser.name);
-  console.log(result.browser.version);
-  console.log(result.engine);
-  browsername = result.browser.name;
-  console.log(browsername);
- 
-  // OPERATING SYSTEM
-  console.log(result.os.name);
-  console.log(result.os.version);
-  console.log(result.os.versionName);
- 
-  // PLATFORM
-  console.log(result.platform.type);
 
-  if (browsername == "Chrome"){
-        console.log("blocked");
-        window.location.replace("Other/browsernotsupported.html");
-
-}
 });
 
 

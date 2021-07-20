@@ -15,30 +15,37 @@ webWidth();
    }
  });
 
-var cityName = "Louisville"
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var weather = JSON.parse(this.responseText);
-    var weatherTemp = weather.main;
-    console.log(weatherTemp);
-    var floatTemp = weatherTemp.temp
-    var trimmedTemp = parseInt(floatTemp)
-    var feelLike = parseInt(weatherTemp.feels_like)
-    var minTemp = parseInt(weatherTemp.temp_min)
-    var maxTemp = parseInt(weatherTemp.temp_max)
-    document.getElementById("feels_like").innerHTML = "Feels Like: " + feelLike + "°C"
-    document.getElementById("min_temp").innerHTML = "Min: " + minTemp + "°C"
-    document.getElementById("max_temp").innerHTML = "Max: " + maxTemp + "°C"
-    var uiCityName = weather.name
-    console.log(uiCityName)
-    var countryName = weather.sys
-    document.getElementById("location_country").innerHTML = countryName.country
-    document.getElementById("current_temp").innerHTML = trimmedTemp + "°C";
+
+window.navigator.geolocation.getCurrentPosition(function(pos){
+  console.log(pos);
+  var lat = pos.coords.latitude
+  var lon = pos.coords.longitude
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var weather = JSON.parse(this.responseText);
+      var weatherTemp = weather.main;
+      console.log(weatherTemp);
+      var floatTemp = weatherTemp.temp
+      var trimmedTemp = parseInt(floatTemp)
+      var feelLike = parseInt(weatherTemp.feels_like)
+      var minTemp = parseInt(weatherTemp.temp_min)
+      var maxTemp = parseInt(weatherTemp.temp_max)
+      document.getElementById("feels_like").innerHTML = "Feels Like: " + feelLike + "°C"
+      document.getElementById("min_temp").innerHTML = "Min: " + minTemp + "°C"
+      document.getElementById("max_temp").innerHTML = "Max: " + maxTemp + "°C"
+      var uiCityName = weather.name
+      console.log(uiCityName)
+      var countryName = weather.sys
+      document.getElementById("location_city").innerHTML = uiCityName
+      document.getElementById("location_country").innerHTML = countryName.country
+      document.getElementById("current_temp").innerHTML = trimmedTemp + "°C";
   }
 };
-xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=ae57b07a14d0843eb4fa4e214552bc52&&units=metric", true);
-xmlhttp.send()  ;
+  xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&appid=ae57b07a14d0843eb4fa4e214552bc52&&units=metric", true);
+  xmlhttp.send()  ;
+});
+
 
 
 function newCity() {

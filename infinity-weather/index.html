@@ -16,7 +16,7 @@
         <h2 id="header_title">Infinity Weather</h2>
         <a href="javascript:window.location = location"><img src="images/reload-symbol.png" alt="Refresh for latest information" width="150px" id="reload-symbol"></a>
     </div>   
-   <!-- <p id="info_popup-nd">Try our beta version! It includes save data to cloud, a new UI, and more!  <a href="/beta-version">Try now!</a>  <button id="dismiss_popup">Dismiss</button></p>-->
+    <!--<p id="info_popup-nd">Enable location access to automatically detect your location. <button id="location_access">Enable</button>  <button id="dismiss_popup">Dismiss</button></p> <br>-->
      <div id="location_sidebar">
 
         <div id="saved_locations-sidebar" style="margin-left: 6px;">        
@@ -50,14 +50,14 @@
     <div id="weather_info">  
         <input type="text" name="search" placeholder="Search City or Zip Code.." id="addCityText">
         <input type="button" onclick="newCity();" value="Submit" id="Submit-button"> 
-        <h1 id="location_city" class="location">Louisville</h1>
+        <h1 id="location_city" class="location">Please allow location access or enter a location.</h1>
         <!--<h2 id="location_state" class="location">Kentucky</h2> -->
-        <h2 id="location_country" class="location">United States</h3>
+        <h2 id="location_country" class="location">We never sell your data to anyone. All traffic is anonymous.</h3>
         <!--<p id="update_time">Updated at 4:45 PM</p>
         <br><br>
         <h2 id="weather_status">Sunny</h2>-->
         <br>
-        <h1  id="current_temp">22°C</h1>
+        <h1  id="current_temp"></h1>
         <div id="other_info">
             <h1 id="sky"></h1>
             <h2 id="feels_like"></h2>
@@ -77,7 +77,7 @@
 <script src="app.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script>
-  /*  var dismissPopup_button = document.getElementById("dismiss_popup");
+/* var dismissPopup_button = document.getElementById("dismiss_popup");
 function dismissButtonClick (){
 $("#info_popup-nd").hide();
 } */
