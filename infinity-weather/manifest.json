@@ -1,24 +1,37 @@
 {
-    "dir": "ltr",
-    "lang": "en",
-    "name": "Infinity Weather (Beta): Minamalist weather, for free.",
-    "short_name": "Infinity Weather",
-    "scope": "/infinity-weather/index.html",
-    "display": "standalone",
-    "start_url": "https://agastyamishra.github.io/infinity-weather/index.html",
-    "background_color": "#0000ff",
-    "theme_color": "#0000ff",
-    "description": "Welcome to Infinity Weather Beta! We are exited to announce our latest addition to our ever-growing portfolio of products, Infinity Weather. We have build this using standard Web Technologies, so you can have Infinity Weather on all your devices! Infinity Weather is a minimalist weather application, helping you get straight to your weather information without ads or a cluttered interface. We look forward to adding more features as we take Infinity Weather out of beta! And the best part is: Weather is completely free, with no ads and the highest level of privacy. Our source code can be viewed at https://github.com/agastyamishra/agastyamishra.github.io/tree/main/infinity-weather. ",
-    "orientation": "any",
-    "related_applications": [],
-    "prefer_related_applications": false,
-    "icons": [
-        {
-            "src":"app-logo.png",
-            "type":"image/png",
-            "sizes":"512x512"
-        }
-    ],
-    "url": "https://agastyamishra.github.io/infinity-weather/index.html",
-    "categories": ["Weather"]
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Infinity Weather (Beta): Minamalist weather, for free.",
+  "short_name": "Infinity Weather",
+  "scope": "/infinity-weather/index.html",
+  "display": "standalone",
+  "start_url": "https://agastyamishra.github.io/infinity-weather/index.html",
+  "background_color": "#0000ff",
+  "theme_color": "#0000ff",
+  "description": "Welcome to Infinity Weather Beta! We are exited to announce our latest addition to our ever-growing portfolio of products, Infinity Weather. We have build this using standard Web Technologies, so you can have Infinity Weather on all your devices! Infinity Weather is a minimalist weather application, helping you get straight to your weather information without ads or a cluttered interface. We look forward to adding more features as we take Infinity Weather out of beta! And the best part is: Weather is completely free, with no ads and the highest level of privacy. Our source code can be viewed at https://github.com/agastyamishra/agastyamishra.github.io/tree/main/infinity-weather. ",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "images/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "url": "https://agastyamishra.github.io/infinity-weather/index.html",
+  "categories": [
+    "Weather"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/screenshot-0-1280x800.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/screenshot-1-750x1334.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
+  ]
 }
