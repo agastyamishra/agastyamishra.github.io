@@ -47,13 +47,13 @@
             </ul> -->
         </div> 
 
-    </div>
+
     <div id="weather_info">  
         <input type="text" name="search" placeholder="Search City or Zip Code.." id="addCityText">
         <input type="button" onclick="newCity();" value="Submit" id="Submit-button"> 
         <h1 id="location_city" class="location">Please allow location access or enter a location.</h1>
         <!--<h2 id="location_state" class="location">Kentucky</h2> -->
-        <h2 id="location_country" class="location">We never sell your data to anyone. All traffic is anonymous.</h3>
+        <h3 id="location_country" class="location">We never sell your data to anyone. All traffic is anonymous.</h3>
         <!--<p id="update_time">Updated at 4:45 PM</p>
         <br><br>
         <h2 id="weather_status">Sunny</h2>-->
@@ -100,7 +100,7 @@ function refresh (){
 $("#location_city").html(cityName);
 
 //Around the world error script
-$("#around_theworld-sidebar--location_list").html("<h6>  An error occured while loading locations. </p>")
+$("#around_theworld-sidebar--location_list").html("<h6>  An error occurred while loading locations. </p>")
 //End Around the world error script
 
 //Location Sidebar height
