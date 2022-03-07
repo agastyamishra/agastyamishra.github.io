@@ -2,6 +2,7 @@
 	"name":"SampleLearnApp",
 	"short_name":"Hello World",
 	"start_url":"/hp/sla/index.html",
+	"id":"/hp/sla/index.html",
 	"display":"standalone",
 	"background_color":"#5900b3",
 	"theme_color":"black",
