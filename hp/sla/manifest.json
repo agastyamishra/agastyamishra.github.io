@@ -1,14 +1,14 @@
 {
-	"name":"SampleLearnApp",
-	"short_name":"Hello World",
+	"name":"EarthCo Emissions Tracker",
+	"short_name":"EarthCo ET",
 	"start_url":"/hp/sla/index.html",
 	"id":"/hp/sla/index.html",
 	"display_override": ["window-controls-overlay"],
 	"display":"standalone",
 	"background_color":"#5900b3",
-	"theme_color":"black",
+	"theme_color":"white",
 	"scope": ".",
-	"description":"Sample for me to learn",
+	"description":"Track your greenhouse gas emission and help to save the planet!",
 	"icons":[
 		{
 		"src":"smalllogo.png",                     
