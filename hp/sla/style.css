@@ -16,3 +16,5 @@
     /* Use the environment variable for setting the height with a fallback. */
     height: env(titlebar-area-height, 33px);
   }
+  .hello {
+    -webkit-app-region: drag; }
