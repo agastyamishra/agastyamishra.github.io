@@ -6,5 +6,17 @@
 	"background_color":"#5900b3",
 	"theme_color":"black",
 	"scope": ".",
-	"description":"Sample for me to learn"
+	"description":"Sample for me to learn",
+	"icons":[
+		{
+		"src":"smalllogo.png",                     
+		"sizes":"192x192",
+		"type":"image/png"
+		},
+		{
+		"src":"largelogo.png",
+		"sizes":"512x512",
+		"type":"image/png"
+		}
+	  ]
 }
