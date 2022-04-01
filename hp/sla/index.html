@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="EN-US">
 <head>
 
     <!-- Responsive -->
@@ -21,6 +21,9 @@
 
     <link rel="manifest"
           href="manifest.json">
+
+<link rel="apple-touch-icon" href="smalllogo.png">
+
 </head>
 
 <body>
@@ -35,7 +38,6 @@
         registerSW();
         });
     
-        // Register the Service Worker
         async function registerSW() {
         if ('serviceWorker' in navigator) {
             try {
