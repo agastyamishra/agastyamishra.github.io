@@ -10,3 +10,12 @@
     height: env(titlebar-area-height, 33px);
   }
   .hello {-webkit-app-region: drag; }
+
+  #searchbox {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
