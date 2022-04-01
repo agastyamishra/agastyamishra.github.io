@@ -4,12 +4,15 @@
      * <meta name="theme-color" content="#36c">`.
      */
     background-image: linear-gradient(90deg, #36c, #131313, 33%, #36c);
-    left: env(titlebar-area-x, 0);
-    top: env(titlebar-area-y, 0);
-    width: env(titlebar-area-width, 100%);
-    height: env(titlebar-area-height, 33px);
-  }
-  .hello {-webkit-app-region: drag; }
+    position: absolute;
+    left: env(titlebar-area-x);
+    top: env(titlebar-area-y);
+    height: env(titlebar-area-height);
+    width: env(titlebar-area-width);
+    -webkit-app-region: drag;
+}
+  
+
 
   #searchbox {
     float: right;
