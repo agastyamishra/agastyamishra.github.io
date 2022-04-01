@@ -22,16 +22,22 @@
     <link rel="manifest"
           href="manifest.json">
 
+          <script src="script.ts"></script>
+
+
 <link rel="apple-touch-icon" href="smalllogo.png">
 
 </head>
 
 <body>
- <input  class="hello" id="searchbox" type="text" placeholder="Search for resources...     🔍">
-<p>This is a test app for me to learn coding. - Agastya Mishra</p>
-    <h1 style="color: green;">
-    Hello, World!    
-    </h1>
+ <input  class="hello" id="searchbox" type="text" placeholder="Search for resources...     🔍" onkeydown="search(this)">
+
+    <h2 style="color: green;">
+App under construction!    </h2>
+
+<h1 style="font-size: xx-large;">EarthCo ET</h1>
+<br><br>
+<h3>Find more climate change resources on </h3> <a href="https://www.ipcc.ch/">The Intergovernmental Panel on Climate Change</a>
 
 
     <script>
@@ -51,6 +57,50 @@
             }
         }
         }
+    </script>
+
+    <script>
+         /* const debounce = (func, wait) => {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+};
+          
+if ('windowControlsOverlay' in navigator) {
+    navigator.windowControlsOverlay.addEventListener('geometrychange', debounce(e => {
+        // Detect if the Window Controls Overlay is visible.
+        const isOverlayVisible = navigator.windowControlsOverlay.visible;
+        // Get the size and position of the title bar area.
+        const titleBarRect = e.titlebarAreaRect;
+
+        console.log(`The overlay is ${isOverlayVisible ? 'visible' : 'hidden'}, the title bar width is ${titleBarRect.width}px`);
+    }, 200));
+}
+
+
+let searchbox = document.getElementById("searchbox");
+searchbox.style.width = '${titleBarRect.width}px'*/
+    </script>
+
+    <script>
+          function search(ele) {
+    if(event.key === 'Enter') {
+        window.location.href = "https://www.bing.com/search?q=" + ele.value + "%20climate%20change";     
+    }
+}
+    </script>
+
+    <script>
+          var windowWidth = window.innerWidth;
+          console.log(windowWidth);
+          let searchbox = document.getElementById("searchbox");
+          //searchbox.style.width = windowWidth
     </script>
     
 </body>
